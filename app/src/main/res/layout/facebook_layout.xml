@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/facebook">
+    <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/facebook"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#d3d3d3"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColorHint="@color/white"
+            android:hint="Username or Email"
+    />
+    <EditText
+            android:maxLines="1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d3d3d3"
+            android:textColorHint="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="#5c6bc0"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="signup for facebook"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:layout_above="@+id/txtForgotpassword"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:padding="2dp"
+                  android:id="@+id/txtForgotpassword"
+                  android:layout_height="wrap_content"
+                  android:text="forgot password?"
+                  android:layout_centerInParent="true"
+                  android:textSize="15sp"
+                  android:textColor="@color/white"
+                  android:layout_marginBottom="10dp"
+                  android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
